@@ -2,7 +2,7 @@
 
 * first component
 const Class1 = () => {
-  return <h1>Esta es la primera clase</h1>;
+  return <p>Esta es la primera clase</p>;
 };
 
 export { Class1 };
@@ -10,7 +10,7 @@ export { Class1 };
 
 ## Clase2:
 
-* Recibir datos con React
+* Recibir datos con React 
 const Class2 = () => {
   const productList = ["item1", "item2", "item3", "item4", "item5"];
 
@@ -50,7 +50,7 @@ Se hablo de el state y el proyecto.
 
 * Mas acerca del useState y "Hooks"
 
-const estado = useState(0) <!-- Registra un valor en el estado>
+const estado = useState(0) <!-- Registra un valor en el estado y devuelve un array>
 const number = estado[0] <!-- Valor alamcenado en el estado >
 const setNumber = estado[1]  <!--Funcion que modifica el estado>
 

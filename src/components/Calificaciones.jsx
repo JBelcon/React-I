@@ -28,6 +28,7 @@ const students = [
 const Calificaciones = () => {
   return (
     <>
+      <h2>Propiedad Children</h2>
       <Menu>
         <ul>
           <li>Link 1</li>
@@ -37,6 +38,7 @@ const Calificaciones = () => {
         </ul>
       </Menu>
 
+      <hr />
       <section className="container">
         <table className="table">
           <caption>Tabla de calificaciones</caption>

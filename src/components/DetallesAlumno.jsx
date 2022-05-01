@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const DetallesAlumno = ({ student }) => {
-  let calificacionFinal = 0;
+  const [calificacion, setCalificacion] = useState(null);
 
   const calcularPromedio = () => {
     alert("Calculando..");
-    calificacionFinal = 10;
+    setCalificacion(
+      student.notes.reduce(
+        (previousValue, currentValue) => previousValue + currentValue,
+        0
+      )
+    );
   };
   return (
     <>
@@ -14,7 +19,7 @@ const DetallesAlumno = ({ student }) => {
         {student.notes.map((note, id) => (
           <td key={id}>{note}</td>
         ))}
-        <td>{calificacionFinal}</td>
+        <td>{calificacion}</td>
         <td>
           <button onClick={calcularPromedio}>Calcular</button>
         </td>

@@ -1,3 +1,4 @@
+import "./css/reto2.css";
 const students = [
   {
     id: 1,
@@ -24,7 +25,7 @@ const students = [
 const Reto2 = () => {
   return (
     <>
-      <section className="container">
+      <section className="reto2">
         <table className="table">
           <caption>Tabla de calificaciones</caption>
 

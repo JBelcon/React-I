@@ -1,3 +1,4 @@
+import "./css/reto1.css";
 const Reto1 = () => {
   //mostar datos de los alumnos
   const students = [
@@ -30,9 +31,10 @@ const Reto1 = () => {
 
   const listStudets = students.map((student) => {
     return (
-      <div key={student.id}>
+      <div className="student" key={student.id}>
         <p>
-          Nombre: {student.name} <br /> Edad: {student.age} años
+          <strong>Nombre:</strong> {student.name} <br /> <strong>Edad:</strong>{" "}
+          {student.age} años
         </p>
       </div>
     );
@@ -40,8 +42,10 @@ const Reto1 = () => {
 
   return (
     <>
-      <h4> Lista de Estudiantes:</h4>
-      {listStudets}
+      <section className="reto1">
+        <h4> Lista de Estudiantes</h4>
+        <article>{listStudets}</article>
+      </section>
     </>
   );
 };

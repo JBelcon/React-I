@@ -1,6 +1,5 @@
 import React from "react";
 import { DetallesAlumno } from "./DetallesAlumno";
-import { Menu } from "./Menu";
 
 const students = [
   {
@@ -28,17 +27,6 @@ const students = [
 const Calificaciones = () => {
   return (
     <>
-      <h2>Propiedad Children</h2>
-      <Menu>
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-          <li>Link 4</li>
-        </ul>
-      </Menu>
-
-      <hr />
       <section className="container">
         <table className="table">
           <caption>Tabla de calificaciones</caption>

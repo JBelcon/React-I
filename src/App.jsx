@@ -1,15 +1,16 @@
-import { Calificaciones } from "./components/Calificaciones";
-import { Contador } from "./components/Contador";
-import { Estado } from "./components/Estado";
+import { Route, Routes } from "react-router-dom";
+import { Clases } from "./pages/Clases";
+import { Retos } from "./pages/Retos";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <>
-      <Calificaciones />
-      <hr />
-      <Contador />
-      <hr />
-      <Estado />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Clases />} />
+        <Route path="/retos" element={<Retos />} />
+      </Routes>
     </>
   );
 }

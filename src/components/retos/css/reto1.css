@@ -1,0 +1,41 @@
+.reto1{  
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  background-color: #f6f3ea;
+  font-family: 'Roboto', sans-serif;
+}
+.reto1 h4{
+  font-weight: normal;
+  margin-top: 12px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+}
+
+.reto1 article{  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 13px;
+}
+.student{
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin: 12px 0;
+  padding: 12px;
+  transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
+}
+.student:hover{
+  box-shadow: 4px 4px 0 0 #000;
+  transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
+}
+
+@media (min-width: 992px) {
+  .reto1{  
+  flex-flow: row wrap;
+  }
+}

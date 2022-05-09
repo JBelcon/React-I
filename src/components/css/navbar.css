@@ -1,0 +1,48 @@
+.navbar{
+  position: fixed;
+  background: #437894ee;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
+  transition-delay: 0.5s;
+  z-index: 1;
+}
+.navbar.open {
+  top: 0;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.navbar-list > li {
+  margin-block: 20px;
+  padding-inline: 50px;
+  overflow: hidden;
+}
+.linkActive{
+  font-weight: bold;
+}
+
+
+@media (min-width: 992px) {
+  .nav-btn{ display: none;}
+
+  .navbar {
+    all:unset;
+  }
+  .navbar-list > li {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+  }
+  .navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}

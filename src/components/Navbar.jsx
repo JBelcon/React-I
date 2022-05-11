@@ -25,6 +25,16 @@ const Navbar = ({ open }) => {
             Retos
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => {
+              return isActive ? "linkActive" : "";
+            }}
+            to="/context"
+          >
+            Context
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
